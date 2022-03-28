@@ -1,0 +1,19 @@
+title ""
+onexit *main
+*main
+n = 9999999999999999999999999999
+a(0) = 2
+c = 1
+for i , 3 , n , 2
+	chk = 0
+	f = i / 2
+	foreach a
+		if ( i \ a(cnt) ) = 0 : chk = 1 : break
+		if a(cnt) >= f : break
+	loop
+	if chk=0 {
+		a(c) = i
+		c++
+	}
+next
+goto *main
